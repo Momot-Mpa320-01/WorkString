@@ -7,12 +7,75 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/title_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Первая фраза:"
+        android:textColor="#000"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
+        app:layout_constraintTop_toBottomOf="@id/title_1"
+        android:textSize="@dimen/text_size"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/title_1" />
+
+    <TextView
+        android:id="@+id/title_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Вторая фраза:"
+        app:layout_constraintStart_toStartOf="@id/title_1"
+        app:layout_constraintTop_toBottomOf="@id/text1"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintTop_toBottomOf="@id/title_2"
+        android:text="Hello world2 "
+        app:layout_constraintStart_toStartOf="@id/title_2"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/title_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Результат:"
+        app:layout_constraintTop_toBottomOf="@id/text2"
+        android:textSize="@dimen/text_size"
+        android:textColor="#000"
+        app:layout_constraintStart_toStartOf="@id/title_1"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello world3"
+        app:layout_constraintTop_toBottomOf="@id/title_3"
+        app:layout_constraintStart_toStartOf="@id/title_3"
+        android:textSize="@dimen/text_size"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:id="@+id/gen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gen"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginBottom="40dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
