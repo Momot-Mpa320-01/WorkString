@@ -20,11 +20,12 @@
 
     <TextView
         android:id="@+id/text1"
-        android:layout_width="wrap_content"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:text="Hello World!"
         app:layout_constraintTop_toBottomOf="@id/title_1"
         android:textSize="@dimen/text_size"
+        android:layout_marginEnd="20dp"
         android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="@id/title_1" />
 
@@ -41,32 +42,14 @@
         android:layout_marginTop="20dp"/>
     <TextView
         android:id="@+id/text2"
-        android:layout_width="wrap_content"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:textSize="@dimen/text_size"
         app:layout_constraintTop_toBottomOf="@id/title_2"
         android:text="Hello world2 "
         app:layout_constraintStart_toStartOf="@id/title_2"
         android:layout_marginTop="10dp"/>
-    <TextView
-        android:id="@+id/title_3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Результат:"
-        app:layout_constraintTop_toBottomOf="@id/text2"
-        android:textSize="@dimen/text_size"
-        android:textColor="#000"
-        app:layout_constraintStart_toStartOf="@id/title_1"
-        android:textStyle="bold"
-        android:layout_marginTop="20dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello world3"
-        app:layout_constraintTop_toBottomOf="@id/title_3"
-        app:layout_constraintStart_toStartOf="@id/title_3"
-        android:textSize="@dimen/text_size"
-        android:layout_marginTop="10dp"/>
+
     <Button
         android:id="@+id/gen"
         android:layout_width="wrap_content"
